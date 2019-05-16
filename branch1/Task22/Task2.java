@@ -10,12 +10,14 @@ Patient patient1 = new Patient("Иван", 21, " болен ", 3);
 Patient patient2 = new Patient("Петя", 34, " болен ", 4);
 Patient patient3 = new Patient("Зина", 75, " больна ", 5);
 Patient patient4 = new Patient("Глаша", 12, " больна ", 6);
+Patient patient5 = new Patient("Изольда", 112, " больна ", 7);
 Registry registry = new Registry();
 registry.registr(patient);
 registry.registr(patient1);
 registry.registr(patient2);
 registry.registr(patient3);
 registry.registr(patient4);
+registry.registr(patient5);
 doctor.showPatient();
 
 }

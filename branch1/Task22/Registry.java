@@ -12,11 +12,16 @@ System.out.println("Регитратура: Мы записываем пацие
 
 
 public void registr(Patient patient){
+boolean isFull = true;
 for(int i=0; i<patientList.length;i++){
 if(patientList[i]==null){
 patientList[i]= patient;
+isFull = false;
 break;
 }
+
 }
+if(isFull){
+System.out.println("Регистратура: Приём закончен.");}
 }
 }
