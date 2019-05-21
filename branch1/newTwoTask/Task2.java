@@ -25,8 +25,9 @@ public class Task2 {
         registry.addPatientToDoctor(lor, patient4);
         registry.addPatientToDoctor(lor, patient5);
         registry.addPatientToDoctor(lor, patient6);
-        xirurg.showPatient();
-        lor.showPatient();
+
+        registry.showPatientofDoctor(lor);
+        registry.showPatientofDoctor(xirurg);
 
     }
 }

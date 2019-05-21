@@ -2,7 +2,7 @@ package newTwoTask;
 
 public class Registry {
 
-    Registry() {
+    public Registry() {
         System.out.println("Регитратура: Мы записываем пациентов!!");
     }
 
@@ -18,6 +18,12 @@ public class Registry {
         }
         if (isFull) {
             System.out.println("Регистратура: Приём закончен. " + patient.getName() + " Вы не успели!");
+        }
+
+    }
+    public void showPatientofDoctor(Doctor doctor) {
+        for (Patient i : doctor.getPatient()) {
+            System.out.println("у доктора " + doctor.getName() + " лечаться: " + i.getName());
         }
 
     }

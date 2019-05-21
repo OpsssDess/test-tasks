@@ -11,12 +11,7 @@ public class Doctor extends Men {
         System.out.println("Я человек: " + name + " " + age + " года " + healthStatus + " Я доктор, моя позиция " + position);
     }
 
-    public void showPatient() {
-        for (Patient i : patientList) {
-            System.out.println("у доктора " + getName() + " лечаться: " + i.getName());
-        }
-
-    }
+    
 
     public Patient[] getPatient() {
         return patientList;
