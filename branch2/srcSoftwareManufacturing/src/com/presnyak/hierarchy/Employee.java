@@ -15,6 +15,11 @@ public class Employee extends Human {
         this.experienceJob = experienceJob;
     }
 
+    Employee(String name, int experienceJob) {
+        super(name);
+        this.experienceJob = experienceJob;
+    }
+
     public int getSalary() {
         return salary;
     }
