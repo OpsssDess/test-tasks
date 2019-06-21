@@ -12,13 +12,13 @@ public class ResourceDepartment {
             if (men.getExperienceJob() > 2) {
                 if (men.getExperienceJob() >= 10) {
                     men.setPosition("Senior");
-                    men.setSalary(1000);
+                    men.setSalary(1100);
                     employees.add(men);
                     continue;
                 }
                 if (men.getExperienceJob() >= 4 && men.getExperienceJob() < 10) {
                     men.setPosition("Midlle");
-                    men.setSalary(500);
+                    men.setSalary(600);
                     employees.add(men);
                     continue;
                 }
@@ -53,19 +53,13 @@ public class ResourceDepartment {
         }
     }//Вывоит на экран список работников в зависимости от должности
 
-    public void showSumSalary(List<Employee> list, String position) {
+    public int showSumSalary(List<Employee> list) {
         int sum = 0;
-        for (int i = 0; i < list.size(); i++) {
-            sum += list.get(i).getSalary();
+        for(Employee a: list){
+        sum += a.getSalary();
         }
-        System.out.println("Сумма зарплаты работников на должности " + position + ":" + sum);
-    }// показывает сумму зарплаты работников, которые находятся на одинаковой должности 
+        return sum;
+    }// показывает сумму зарплаты работников, которые находятся в коллекции, которую передаю в параметр list
 
-    public void showSumSalaries(ArrayList<Employee> employes) {
-        int sum = 0;
-        for (int i = 0; i < employes.size(); i++) {
-            sum += employes.get(i).getSalary();
-        }
-        System.out.println("Сумма зарплаты всех работников: " + sum);
-    }
+    
 }
